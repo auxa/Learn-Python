@@ -17,10 +17,15 @@ strFile = file_content.decode("utf-8")
 
 arrData = strFile.split("\n")
 
-columnsStr = arrData[0]
+print (arrData)
+
+data= arrData[1:]
+
+print(data)
+columnsStr = arrData[1]
 columns = columnsStr.split(',')
 print(columns)
 
-index1 = columns.index("device_width")
+index1 = columns[3]
 
 print(str(index1))
